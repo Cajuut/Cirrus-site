@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <script type="module" crossorigin src="./assets/index-DN_0CYpv.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-0ZeAKVj7.css">
+    <script type="module" crossorigin src="./assets/index-D68DxW0T.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Ci-Hecq0.css">
   </head>
   <body class="dark-theme">
     <!-- Navigation -->
@@ -24,6 +24,7 @@
         </div>
         <div class="nav-links">
           <a href="#features" class="nav-item">特徴</a>
+          <a href="/docs.html" class="nav-item">Docs</a>
           <a href="https://github.com/Cajuut/cirrus-mods" target="_blank" class="nav-item">GitHub</a>
         </div>
       </div>
@@ -34,11 +35,10 @@
       <div class="hero-content fade-in-up">
         <div class="badge">Version 1.0 Alpha</div>
         <h1 class="hero-title">
-          The Next Generation <br />
-          Minecraft Client
+          Beyond the Clouds.
         </h1>
         <p class="hero-subtitle">
-          Tauriによる軽量・高速なランチャーと、LiquidGlassを採用した美しいUI。<br/>
+          Tauriによる軽量・高パフォーマンスと、LiquidGlass採用の美しいUI。<br/>
           無駄を削ぎ落とした、あなたに最適なMinecraft体験を提供します。
         </p>
         <div class="hero-actions">
@@ -59,43 +59,15 @@
     <!-- Features Section -->
     <section id="features" class="features">
       <div class="section-header fade-in-up">
-        <h2 class="section-title">Features</h2>
-        <p class="section-subtitle">Cirrus Client の主な機能</p>
+        <h2 class="section-title">Features & Modules</h2>
+        <p class="section-subtitle">Search through 40+ built-in modules</p>
+        <div class="search-container" style="margin-top: 2rem;">
+          <input type="text" id="module-search" placeholder="Search modules... (e.g. FPS, PvP, Zoom)" class="search-input">
+        </div>
       </div>
 
-      <div class="feature-grid">
-        <div class="feature-card orbit-container fade-in-up delay-1">
-          <div class="orbit-border"></div>
-          <div class="feature-content">
-            <div class="feature-icon">
-              <img src="./icons/fps-display.png" alt="High Performance" width="32" height="32" />
-            </div>
-            <h3>軽量・高速なランチャー</h3>
-            <p>Rust/Tauriで構築されたランチャーは、Electron製クライアントに比べて圧倒的に少ないメモリ使用量で動作します。</p>
-          </div>
-        </div>
-
-        <div class="feature-card orbit-container fade-in-up delay-2">
-          <div class="orbit-border"></div>
-          <div class="feature-content">
-            <div class="feature-icon">
-              <img src="./icons/Liquid.png" alt="LiquidGlass" width="32" height="32" />
-            </div>
-            <h3>LiquidGlass & ImGui</h3>
-            <p>ゲーム内UIは美しいすりガラス（LiquidGlass）で統一。設定画面はC++標準のImGuiを使用し、ゲームのFPSを落としません。</p>
-          </div>
-        </div>
-
-        <div class="feature-card orbit-container fade-in-up delay-3">
-          <div class="orbit-border"></div>
-          <div class="feature-content">
-            <div class="feature-icon">
-              <img src="./icons/settings.png" alt="Settings" width="32" height="32" />
-            </div>
-            <h3>フルカスタマイズHUD</h3>
-            <p>HUD Editorを使えば、画面上の要素をピクセル単位でドラッグ＆ドロップ配置可能。スナップ機能で整列も簡単です。</p>
-          </div>
-        </div>
+      <div class="feature-grid" id="module-grid">
+        <!-- Rendered by JS -->
       </div>
     </section>
 
